@@ -1,0 +1,286 @@
+--[[
+
+		Gui2Lua™
+		10zOfficial
+		Version 1.0.0
+
+]]
+
+
+-- Instances
+
+local DupeGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local DupeTitle = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local DupeMenu = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TutorialButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TutorialTitle = Instance.new("TextLabel")
+local TutorialDesc = Instance.new("TextLabel")
+local EnableDupe = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local DisableDupe = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local DupeStatus = Instance.new("TextLabel")
+local Notification = Instance.new("TextLabel")
+
+-- Properties
+
+DupeGui.Name = "DupeGui"
+DupeGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DupeGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = DupeGui
+Main.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+Main.BorderColor3 = Color3.new(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0902497917, 0, 0.418020666, 0)
+Main.Size = UDim2.new(0, 308, 0, 350)
+
+UICorner.Parent = Main
+
+DupeTitle.Name = "DupeTitle"
+DupeTitle.Parent = Main
+DupeTitle.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+DupeTitle.BorderColor3 = Color3.new(0, 0, 0)
+DupeTitle.BorderSizePixel = 0
+DupeTitle.Size = UDim2.new(0, 308, 0, 63)
+DupeTitle.Font = Enum.Font.ArialBold
+DupeTitle.Text = "OP DUPE HUB"
+DupeTitle.TextColor3 = Color3.new(1, 1, 1)
+DupeTitle.TextSize = 44
+DupeTitle.TextWrapped = true
+
+UICorner_2.Parent = DupeTitle
+
+DupeMenu.Name = "DupeMenu"
+DupeMenu.Parent = Main
+DupeMenu.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+DupeMenu.BorderColor3 = Color3.new(0, 0, 0)
+DupeMenu.BorderSizePixel = 0
+DupeMenu.Position = UDim2.new(0.038961038, 0, 0.814285696, 0)
+DupeMenu.Size = UDim2.new(0, 137, 0, 57)
+DupeMenu.Font = Enum.Font.ArialBold
+DupeMenu.Text = "Dupe"
+DupeMenu.TextColor3 = Color3.new(1, 1, 1)
+DupeMenu.TextSize = 37
+DupeMenu.TextWrapped = true
+
+UICorner_3.Parent = DupeMenu
+
+TutorialButton.Name = "TutorialButton"
+TutorialButton.Parent = Main
+TutorialButton.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+TutorialButton.BorderColor3 = Color3.new(0, 0, 0)
+TutorialButton.BorderSizePixel = 0
+TutorialButton.Position = UDim2.new(0.512987018, 0, 0.814285696, 0)
+TutorialButton.Size = UDim2.new(0, 137, 0, 57)
+TutorialButton.Font = Enum.Font.ArialBold
+TutorialButton.Text = "Tutorial"
+TutorialButton.TextColor3 = Color3.new(1, 1, 1)
+TutorialButton.TextSize = 37
+TutorialButton.TextWrapped = true
+
+UICorner_4.Parent = TutorialButton
+
+TutorialTitle.Name = "TutorialTitle"
+TutorialTitle.Parent = Main
+TutorialTitle.BackgroundColor3 = Color3.new(1, 1, 1)
+TutorialTitle.BackgroundTransparency = 1
+TutorialTitle.BorderColor3 = Color3.new(0, 0, 0)
+TutorialTitle.BorderSizePixel = 0
+TutorialTitle.Position = UDim2.new(0.0519480519, 0, 0.200000003, 0)
+TutorialTitle.Size = UDim2.new(0, 276, 0, 26)
+TutorialTitle.Visible = false
+TutorialTitle.Font = Enum.Font.ArialBold
+TutorialTitle.Text = "TUTORIAL:"
+TutorialTitle.TextColor3 = Color3.new(1, 1, 1)
+TutorialTitle.TextScaled = true
+TutorialTitle.TextSize = 14
+TutorialTitle.TextWrapped = true
+
+TutorialDesc.Name = "TutorialDesc"
+TutorialDesc.Parent = Main
+TutorialDesc.BackgroundColor3 = Color3.new(1, 1, 1)
+TutorialDesc.BackgroundTransparency = 1
+TutorialDesc.BorderColor3 = Color3.new(0, 0, 0)
+TutorialDesc.BorderSizePixel = 0
+TutorialDesc.Position = UDim2.new(0.0519480519, 0, 0.274285704, 0)
+TutorialDesc.Size = UDim2.new(0, 276, 0, 182)
+TutorialDesc.Visible = false
+TutorialDesc.Font = Enum.Font.ArialBold
+TutorialDesc.Text = "Deposit the pets/diamonds  you want to dupe into your bank. Then press the \"Enable Dupe\" button and wait around 5 to 15 seconds (the longer you wait the better chance of duping). Make sure to press \"Disable Dupe\" after, enjoy duping!"
+TutorialDesc.TextColor3 = Color3.new(1, 1, 1)
+TutorialDesc.TextScaled = true
+TutorialDesc.TextSize = 14
+TutorialDesc.TextWrapped = true
+
+EnableDupe.Name = "EnableDupe"
+EnableDupe.Parent = Main
+EnableDupe.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+EnableDupe.BorderColor3 = Color3.new(0, 0, 0)
+EnableDupe.BorderSizePixel = 0
+EnableDupe.Position = UDim2.new(0.0876623392, 0, 0.214285716, 0)
+EnableDupe.Size = UDim2.new(0, 255, 0, 52)
+EnableDupe.Font = Enum.Font.ArialBold
+EnableDupe.Text = "Enable Dupe"
+EnableDupe.TextColor3 = Color3.new(1, 1, 1)
+EnableDupe.TextSize = 37
+EnableDupe.TextWrapped = true
+
+UICorner_5.Parent = EnableDupe
+
+DisableDupe.Name = "DisableDupe"
+DisableDupe.Parent = Main
+DisableDupe.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+DisableDupe.BorderColor3 = Color3.new(0, 0, 0)
+DisableDupe.BorderSizePixel = 0
+DisableDupe.Position = UDim2.new(0.0876623392, 0, 0.380820334, 0)
+DisableDupe.Size = UDim2.new(0, 255, 0, 52)
+DisableDupe.Font = Enum.Font.ArialBold
+DisableDupe.Text = "Disable Dupe"
+DisableDupe.TextColor3 = Color3.new(1, 1, 1)
+DisableDupe.TextSize = 37
+DisableDupe.TextWrapped = true
+
+UICorner_6.Parent = DisableDupe
+
+DupeStatus.Name = "DupeStatus"
+DupeStatus.Parent = Main
+DupeStatus.BackgroundColor3 = Color3.new(1, 1, 1)
+DupeStatus.BackgroundTransparency = 1
+DupeStatus.BorderColor3 = Color3.new(0, 0, 0)
+DupeStatus.BorderSizePixel = 0
+DupeStatus.Position = UDim2.new(0.0974026024, 0, 0.562857151, 0)
+DupeStatus.Size = UDim2.new(0, 248, 0, 33)
+DupeStatus.Font = Enum.Font.ArialBold
+DupeStatus.Text = "Dupe Status: 🔴"
+DupeStatus.TextColor3 = Color3.new(1, 1, 1)
+DupeStatus.TextScaled = true
+DupeStatus.TextSize = 33
+DupeStatus.TextWrapped = true
+
+Notification.Name = "Notification"
+Notification.Parent = Main
+Notification.BackgroundColor3 = Color3.new(1, 1, 1)
+Notification.BackgroundTransparency = 1
+Notification.BorderColor3 = Color3.new(0, 0, 0)
+Notification.BorderSizePixel = 0
+Notification.Position = UDim2.new(0.0779220834, 0, 0.657142878, 0)
+Notification.Size = UDim2.new(0, 259, 0, 44)
+Notification.Visible = false
+Notification.Font = Enum.Font.ArialBold
+Notification.Text = "Items have been duped, please check your bank!"
+Notification.TextColor3 = Color3.new(1, 1, 1)
+Notification.TextScaled = true
+Notification.TextSize = 24
+Notification.TextWrapped = true
+
+-- Scripts
+
+local function HBPLBNZ_fake_script() -- Main.DraggableScript 
+	local script = Instance.new('Script', Main)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(HBPLBNZ_fake_script)()
+local function MMTU_fake_script() -- DupeMenu.Script 
+	local script = Instance.new('Script', DupeMenu)
+
+	-- Get the button
+	local button = script.Parent
+	local tutorialTitle = script.Parent.Parent.TutorialTitle
+	local tutorialDesc = script.Parent.Parent.TutorialDesc
+	local enableDupeButton = script.Parent.Parent.EnableDupe
+	local disableDupeButton = script.Parent.Parent.DisableDupe
+	local dupeStatus = script.Parent.Parent.DupeStatus
+	
+	-- Function to execute when the button is clicked
+	local function onButtonClicked()
+		tutorialTitle.Visible = false
+		tutorialDesc.Visible = false
+		enableDupeButton.Visible = true
+		disableDupeButton.Visible = true
+		dupeStatus.Visible = true
+		print("Switched to Dupe Tab")
+	end
+	
+	-- Connect the function to the button's click event
+	button.MouseButton1Click:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(MMTU_fake_script)()
+local function OVHBR_fake_script() -- TutorialButton.Script 
+	local script = Instance.new('Script', TutorialButton)
+
+	-- Get the button
+	local button = script.Parent
+	local tutorialTitle = script.Parent.Parent.TutorialTitle
+	local tutorialDesc = script.Parent.Parent.TutorialDesc
+	local enableDupeButton = script.Parent.Parent.EnableDupe
+	local disableDupeButton = script.Parent.Parent.DisableDupe
+	local dupeStatus = script.Parent.Parent.DupeStatus
+	local notification = script.Parent.Parent.Notification
+	
+	-- Function to execute when the button is clicked
+	local function onButtonClicked()
+		tutorialTitle.Visible = true
+		tutorialDesc.Visible = true
+		enableDupeButton.Visible = false
+		disableDupeButton.Visible = false
+		dupeStatus.Visible = false
+		notification.Visible = false
+		print("Switched to Tutorial Tab")
+	end
+	
+	-- Connect the function to the button's click event
+	button.MouseButton1Click:Connect(onButtonClicked)
+	
+end
+coroutine.wrap(OVHBR_fake_script)()
+local function SZQJS_fake_script() -- EnableDupe.Script 
+	local script = Instance.new('Script', EnableDupe)
+
+	-- Get the button
+	local button = script.Parent
+	local status = script.Parent.Parent.DupeStatus
+	local notification = script.Parent.Parent.Notification
+	
+	-- Function to execute when the button is clicked
+	local function onButtonClicked()
+		status.Text = ("Dupe Status: 🟢")
+		print("Dupe has been enabled")
+		task.wait(5)
+		if status.Text == ("Dupe Status: 🟢") then
+			notification.Visible = true
+		end
+	end
+	
+	-- Connect the function to the button's click event
+	button.MouseButton1Click:Connect(onButtonClicked)
+end
+coroutine.wrap(SZQJS_fake_script)()
+local function XTBDX_fake_script() -- DisableDupe.Script 
+	local script = Instance.new('Script', DisableDupe)
+
+	-- Get the button
+	local button = script.Parent
+	local status = script.Parent.Parent.DupeStatus
+	local notification = script.Parent.Parent.Notification
+	
+	-- Function to execute when the button is clicked
+	local function onButtonClicked()
+		status.Text = ("Dupe Status: 🔴")
+		print("Dupe has been disabled")
+		notification.Visible = false
+	end
+	
+	-- Connect the function to the button's click event
+	button.MouseButton1Click:Connect(onButtonClicked)
+end
+coroutine.wrap(XTBDX_fake_script)()
